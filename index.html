@@ -14,12 +14,14 @@
 
     <!-- OUR SCRIPTS GO HERE! -->
     <script>
-
       shakeCard = function() {
         document.getElementById( 'card' ).classList.add( 'shaking' );
+        setTimeout(
+          function() {
+            document.getElementById( 'card' ).classList.remove( 'shaking' );
+          }, 500
+        );
       }
-
-
     </script>
     <!-- END OUR SCRIPTS -->
 
