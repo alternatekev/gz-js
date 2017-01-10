@@ -1,0 +1,20 @@
+body {
+  background: #CF9;
+}
+
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.mdl-card__title {
+  height: 200px;
+  background: url('images/1872483_200x130.png.gif') no-repeat;
+  background-size: cover;
+}
