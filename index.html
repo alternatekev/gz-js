@@ -13,20 +13,44 @@
     <link rel="stylesheet" href="style.css" />
 
     <!--
-    Step 1: write shakeCard function with simple alert.
-      - shakeCard: function expression
-    Step 2: add function call to #shaker
-    Step 3: use document.getElementById.classList.add to add "shaking" class
-    Step 4: use setTimeout to remove "shaking" class after 500ms
+    Step 1: View page in browser.
+    Step 2: remove comments from css and js files in header
+    Step 3: View page in browser.
+    Step 4: write shakeCard function.
+      - shakeCard: function declaration
+      - since it's the first function, draw out diagram on board
+        - function funcName( arg ) { }
+          |        |       | |   | | |
+
+        - var myFunction = function( arg ) { }
+        
+    Step 5: add function call to #shaker
+      - since it's first function call, draw diagram on board
+        - funcName( arg )
+          |       | |   |
+
+    Step 6: View page in browser
+    Step 7: add alert( 'you clicked me'), describe use of arg.
+    Step 8: view page in browser
+    Step 9: set variable of card using document.getElementById. describe how this is a method, a special function
+    Step 10: use alert() to show card obj div element
+    Step 11: view in browser
+    Step 12: remove alert
+    Step 13: call classList.add on card to add shaking class
+    Step 14: view in browser (can only click once)
+    Step 15: Add setTimeout with anonymous function expression to use classList.remove on card. remove shaking class
+    Step 16: View in browser
     -->
 
     <!-- OUR SCRIPTS GO HERE! -->
     <script>
-      shakeCard = function() {
-        document.getElementById( 'card' ).classList.add( 'shaking' );
-        setTimeout(
+      function shakeCard() {
+        var card = document.getElementById( 'card' );
+        card.classList.add( 'shaking' );
+
+        setTimeout (
           function() {
-            document.getElementById( 'card' ).classList.remove( 'shaking' );
+            card.classList.remove( 'shaking' );
           }, 500
         );
       }
