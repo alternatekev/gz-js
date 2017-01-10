@@ -3,25 +3,21 @@
     <title>Galvanize JavaScript Functions, Lesson 1</title>
 
     <!-- material design component library -->
-    <!--<link rel="stylesheet" href="material/material.min.css" />
+    <link rel="stylesheet" href="material/material.min.css" />
     <!-- icon font for components -->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- our custom css -->
-    <!--<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- material design component js -->
-    <!--<script src="material/material.min.js"></script>
+    <script src="material/material.min.js"></script>
 
     <!-- OUR SCRIPTS GO HERE! -->
     <script>
 
-
-
-
-
-
-
-
+      shakeCard = function() {
+        document.getElementById( 'card' ).classList.add( 'shaking' );
+      }
 
 
     </script>
@@ -31,13 +27,13 @@
   <body>
     <div class="page-container">
 
-      <div class="mdl-card mdl-shadow--2dp">
+      <div id="card" class="mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text">Howdy!</h2>
         </div>
         <div class="mdl-card__supporting-text">This is our super exciting JavaScript Functions lesson. In this lesson, we'll learn how to make this card do a little dance!</div>
         <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored">Shake it like a Polaroid Picture</a>
+          <button id="shaker" onclick="shakeCard()" class="mdl-button mdl-button--colored">Shake it like a Polaroid Picture</button>
         </div>
         <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
@@ -47,5 +43,7 @@
       </div>
 
     </div>
+
+
   </body>
 </html>
