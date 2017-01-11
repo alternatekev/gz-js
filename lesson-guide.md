@@ -9,3 +9,4 @@ Assessments
 
 - The card will shake, demonstrable via code and browser reviews
 - The student will describe the difference between self-defined and native JS functions
+- The student will describe the difference between defining and invoking a function
