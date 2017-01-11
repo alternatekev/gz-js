@@ -23,7 +23,7 @@
           |        |       | |   | | |
 
         - var myFunction = function( arg ) { }
-        
+
     Step 5: add function call to #shaker
       - since it's first function call, draw diagram on board
         - funcName( arg )
@@ -44,16 +44,17 @@
 
     <!-- OUR SCRIPTS GO HERE! -->
     <script>
+
       function shakeCard() {
         var card = document.getElementById( 'card' );
         card.classList.add( 'shaking' );
-
-        setTimeout (
-          function() {
-            card.classList.remove( 'shaking' );
-          }, 500
-        );
+        setTimeout( resetCard, 500 );
       }
+
+      function resetCard() {
+        card.classList.remove( 'shaking' );
+      }
+
     </script>
     <!-- END OUR SCRIPTS -->
 
